@@ -1,0 +1,47 @@
+.updateProfile {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  height: 100vh;
+}
+.updateProfile__container {
+  padding-top: 10px;
+}
+.formInput__container {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.form-input {
+  width: 400px;
+  padding: 10px;
+  padding-top: 20px;
+}
+#dark .form-input{
+  color: white;
+  border-color: #3bc4d4;
+}
+.update-button {
+  background-color: #3bc4d4;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 400px;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 0;
+}
+.updateButton__container {
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-input {
+    width: 300px;
+  }
+  .update-button {
+    width: 300px;
+  }
+}

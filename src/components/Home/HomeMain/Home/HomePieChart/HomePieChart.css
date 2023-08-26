@@ -1,0 +1,46 @@
+.homeChart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  width: 380px;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.homeChartFull {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 410px;
+  width: 93%;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+}
+#dark .homeChart {
+  background-color: #2d383c;
+  border: none;
+}
+#dark .homeChartFull {
+  background-color: #2d383c;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .homeChart {
+    width: 360px;
+  }
+  #dark .homeChart {
+    width: 350px;
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .homeChart {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+}

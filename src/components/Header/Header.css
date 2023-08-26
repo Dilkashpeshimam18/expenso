@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  height: 65px;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+}
+#dark .header {
+  background-color: #2d383c;
+  border: none;
+}
+#dark .header__title {
+  color: white;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+.header__left {
+  margin-left: 20px;
+}
+.header__right {
+  display: flex;
+  padding-top: 10px;
+  margin-right: 50px;
+}
+.header__rightSub {
+  padding-top: 10px;
+  margin-right: 20px;
+}
+.header__rightSubLink {
+  display: flex;
+  margin-right: 20px;
+}
+.header__authBtn {
+  background-color: #3bc4d4;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 0;
+  margin-top: 5px;
+}
+.toggle {
+  size: 60;
+}
+@media only screen and (max-width: 600px) {
+  .header__title {
+    margin-right: 10px;
+  }
+}

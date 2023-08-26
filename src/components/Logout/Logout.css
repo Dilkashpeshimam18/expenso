@@ -1,0 +1,9 @@
+.logout {
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .header__authBtn {
+    width: 60px;
+    font-size: 10px;
+  }
+}

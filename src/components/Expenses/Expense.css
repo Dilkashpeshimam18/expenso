@@ -1,0 +1,14 @@
+#dark .form-input {
+  background-color: white;
+  color: black;
+}
+.expensesDownload__link {
+  color: black;
+  font-size: 11px;
+  padding-left: 20px;
+  color: rgb(30, 148, 244);
+}
+
+#dark .gridDark__title{
+  color: white;
+}

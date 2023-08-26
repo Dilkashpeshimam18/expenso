@@ -1,0 +1,10 @@
+#light {
+  background-color: white;
+}
+#dark {
+  background-color: #192428;
+  height: fit-content;
+}
+.app {
+  font-family: sans-serif;
+}

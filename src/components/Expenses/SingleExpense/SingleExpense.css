@@ -1,0 +1,67 @@
+.singleExpense__container {
+  padding-top: 3px;
+}
+.singleExpense__container1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.singleExpense__subContainer {
+  display: flex;
+  width: 150px;
+}
+.singleExpense__subAmmount {
+  color: rgb(187, 0, 0);
+  font-weight: 500;
+}
+.singleExpense__subCategory {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 11px;
+  /* color: rgb(1, 140, 140); */
+}
+
+.singleExpense__buttonContainer {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.singleExpense__subTitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: rgb(1, 140, 140);
+  font-weight: 500;
+}
+.singleExpense__subCatContainer {
+  padding-left: 20px;
+}
+#dark .singleExpense__subTitle {
+  color: white;
+}
+#dark .singleExpense__subCategory {
+  color: #3bc4d4;
+}
+
+/* #dark .singleExpense__subTitle {
+  color: #3bc4d4;
+}
+#dark .singleExpense__subCategory {
+  color: white;
+} */
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .singleExpense__subTitle {
+    font-size: 11px;
+  }
+  .singleExpense__subCategory {
+    font-size: 10px;
+    width: 100px;
+  }
+  .singleExpense__subAmmount {
+    font-size: 11px;
+  }
+  .singleExpense__buttonContainer {
+    width: 80px;
+  }
+}

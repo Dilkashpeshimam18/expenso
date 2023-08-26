@@ -1,0 +1,52 @@
+.homeBar {
+  display: flex;
+  height: 325px;
+  width: 370px;
+  background-color: white;
+  align-items: center;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#dark .homeBar {
+  background-color: #2d383c;
+  border: none;
+}
+#dark .homeBarFull {
+  background-color: #2d383c;
+  border: none;
+}
+.homeBarFull {
+  display: flex;
+  height: 450px;
+  width: 89%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45px;
+  margin-top: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .homeBar {
+    width: 350px;
+    padding-left: 7px;
+    margin-top: 20px;
+  }
+  #dark .homeBar {
+    width: 340px;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .homeBarFull {
+    width: 345px;
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .homeBar {
+    width: 300px;
+    height: 250px;
+  }
+}

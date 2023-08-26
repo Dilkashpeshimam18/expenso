@@ -1,0 +1,60 @@
+.homeLeft {
+  flex: 0.2;
+  background-color: white;
+  margin-left: 30px;
+  height: 85vh;
+  margin-top: 30px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+#dark .homeLeft {
+  background-color: #2d383c;
+  border: none;
+  flex: 0.2;
+  width: 500px;
+}
+#dark .homeLeft__userProfile {
+  color: white;
+  border: none;
+}
+#dark .userProfile__name {
+  color: white;
+  border: none;
+}
+.homeLeft__userProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+.userProfile__name {
+  display: flex;
+  text-align: left;
+  width: 170px;
+}
+
+@media only screen and (max-width: 600px) {
+  .homeLeft {
+    width: 320px;
+    margin-left: 20px;
+  }
+  #dark .homeLeft {
+    background-color: #2d383c;
+    border: none;
+    width: 350px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .homeLeft {
+    width: 320px;
+    margin-left: 20px;
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 2000px) and (min-width: 1000px) {
+  .homeLeft {
+    height: 800px;
+  }
+}

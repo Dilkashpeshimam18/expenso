@@ -1,0 +1,45 @@
+.homeOption__list {
+  cursor: pointer;
+  font-size: 16px;
+  padding-bottom: 10px;
+  display: flex;
+  color: rgb(144, 144, 144);
+}
+#dark .homeOption__list {
+  color: white;
+}
+#dark .homeOption__listSelected {
+  color: #3bc4d4;
+  /* color: #0784b5; */
+}
+
+.homeOption {
+  margin-top: 5px;
+}
+.homeOption__container {
+  margin-top: 15px;
+}
+.homeOption__icon {
+  padding-top: 15px;
+  margin-right: 10px;
+}
+.homeOption__listSelected {
+  cursor: pointer;
+  font-size: 16px;
+  padding-bottom: 10px;
+  display: flex;
+  color: rgb(19, 19, 19);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .homeOption {
+    width: 180px;
+  }
+  .homeOption__list {
+    font-size: 12px;
+  }
+  .homeOption__listSelected {
+    font-size: 12px;
+  }
+}

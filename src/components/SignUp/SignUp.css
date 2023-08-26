@@ -1,0 +1,11 @@
+.signUp {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+#dark .signUp {
+  height: 100vh;
+}
