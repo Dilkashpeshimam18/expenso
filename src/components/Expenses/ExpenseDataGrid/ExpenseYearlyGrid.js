@@ -38,7 +38,7 @@ export default function ExpenseYearlyGrid() {
           Authorization: token
         }
       })
-      const response = await reqInstance.get('http://localhost:4000/expense/get-yearlyexpense')
+      const response = await reqInstance.get('https://expenso-backend-production.up.railway.app/expense/get-yearlyexpense')
       const data = response.data.data
       setYearlyData(data)
     } catch (err) {

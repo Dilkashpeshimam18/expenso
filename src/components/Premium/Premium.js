@@ -40,7 +40,7 @@ const Premium = () => {
                     Authorization: token
                 }
             })
-            const order = await reqInstance.get('http://localhost:4000/purchase/premiummembership')
+            const order = await reqInstance.get('https://expenso-backend-production.up.railway.app/purchase/premiummembership')
 
             const options = {
                 key: order.data.key_id,
@@ -54,7 +54,7 @@ const Premium = () => {
 
                     }
 
-                    const res = await reqInstance.post('http://localhost:4000/purchase/updatetransactionstatus', data)
+                    const res = await reqInstance.post('https://expenso-backend-production.up.railway.app/purchase/updatetransactionstatus', data)
                     alert('Congrats! You are premium user now.')
                     localStorage.setItem('isPremiumUser', true)
                     dispatch(authActions.isPremiumUser(true))
@@ -75,7 +75,7 @@ const Premium = () => {
                     status: 'failed',
                     orderId: orderId
                 }
-                const response = await reqInstance.post('http://localhost:4000/purchase/updatetransactionstatus', data)
+                const response = await reqInstance.post('https://expenso-backend-production.up.railway.app/purchase/updatetransactionstatus', data)
 
                 alert('Something went wrong!')
             })

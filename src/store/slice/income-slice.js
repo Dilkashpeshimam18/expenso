@@ -36,7 +36,7 @@ export const addIncome = (income) => {
                 income: income
             }
 
-            let response = await reqInstance.post('http://localhost:4000/income/add-income', data)
+            let response = await reqInstance.post('https://expenso-backend-production.up.railway.app/income/add-income', data)
         }
         try {
             await addInc().then(() => {
@@ -62,7 +62,7 @@ export const getUserIncome = () => {
                 }
             })
 
-            let response = await reqInstance.get('http://localhost:4000/user/get-userDetail')
+            let response = await reqInstance.get('https://expenso-backend-production.up.railway.app/user/get-userDetail')
             let data = response.data.data
             const details = {
                 total_income: data.total_income,
@@ -103,7 +103,7 @@ export const updateUserIncome = (data) => {
                 income: data
             }
 
-            const response = await reqInstance.post('http://localhost:4000/income/edit-income', newIncome)
+            const response = await reqInstance.post('https://expenso-backend-production.up.railway.app/income/edit-income', newIncome)
 
 
             localStorage.setItem('userIncome', JSON.stringify(Number(data)))

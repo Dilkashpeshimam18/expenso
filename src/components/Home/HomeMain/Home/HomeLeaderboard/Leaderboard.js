@@ -17,7 +17,7 @@ const Leaderboard = () => {
                     Authorization: token
                 }
             })
-            const data = await reqInstance.get('http://localhost:4000/premium/show-leaderboard')
+            const data = await reqInstance.get('https://expenso-backend-production.up.railway.app/premium/show-leaderboard')
             setLeaderBoardData(data.data.data)
 
         } catch (err) {

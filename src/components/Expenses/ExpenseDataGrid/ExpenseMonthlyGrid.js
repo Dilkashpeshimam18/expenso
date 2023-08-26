@@ -60,7 +60,7 @@ export default function ExpenseMonthlyGrid({ rowPerPage }) {
         }
       })
 
-      const res = await reqInstance.get(`http://localhost:4000/expense/get-monthlyexpenses?page=${pageNumber}&rowPerPage=${rowPerPage}`)
+      const res = await reqInstance.get(`https://expenso-backend-production.up.railway.app/expense/get-monthlyexpenses?page=${pageNumber}&rowPerPage=${rowPerPage}`)
       setPageExpense(res.data.expense)
       setLastPage(res.data.lastPage)
     } catch (err) {

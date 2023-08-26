@@ -21,7 +21,7 @@ const Login = () => {
                 returnSecureToken: true
             }
 
-            const response = await axios.post('http://localhost:4000/auth/login', data)
+            const response = await axios.post('https://expenso-backend-production.up.railway.app/auth/login', data)
 
             alert('Login successful!')
             // let userEmail = response.data.data.userEmail

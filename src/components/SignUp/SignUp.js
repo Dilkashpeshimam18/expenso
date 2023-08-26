@@ -31,7 +31,7 @@ const SignUp = () => {
 
                     }
 
-                    await axios.post('http://localhost:4000/auth/signup', data)
+                    await axios.post('https://expenso-backend-production.up.railway.app/auth/signup', data)
                     alert('Sign up successful!')
                     setName('')
                     setEmail('')

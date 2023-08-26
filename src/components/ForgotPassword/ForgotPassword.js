@@ -14,7 +14,7 @@ const ForgotPassword = () => {
             const data={
                 email
             }
-            const response = await axios.post('http://localhost:4000/password/forgotpassword ',data)
+            const response = await axios.post('https://expenso-backend-production.up.railway.app/password/forgotpassword ',data)
             console.log(response)
             if(response.status==202){
                 alert(response.data.message)

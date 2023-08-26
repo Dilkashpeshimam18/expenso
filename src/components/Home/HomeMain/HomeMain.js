@@ -169,7 +169,7 @@ const HomeMain = () => {
                 }
             })
 
-            let response = await reqInstance.get('http://localhost:4000/user/get-userDetail')
+            let response = await reqInstance.get('https://expenso-backend-production.up.railway.app/user/get-userDetail')
             let data = response.data.data
 
             setTotalIncome(data.total_income)
@@ -205,7 +205,7 @@ const HomeMain = () => {
                     income: income
                 }
 
-                let response = await reqInstance.post('http://localhost:4000/income/add-income', data)
+                let response = await reqInstance.post('https://expenso-backend-production.up.railway.app/income/add-income', data)
                 getUserBalance()
                 alert('Added income!')
 
@@ -243,7 +243,7 @@ const HomeMain = () => {
                 income
             }
 
-            const response = await reqInstance.post('http://localhost:4000/income/edit-income', newIncome)
+            const response = await reqInstance.post('https://expenso-backend-production.up.railway.app/income/edit-income', newIncome)
 
             getUserBalance()
             localStorage.setItem('userIncome', JSON.stringify(Number(income)))
@@ -272,7 +272,7 @@ const HomeMain = () => {
                     Authorization: token
                 }
             })
-            const response = await reqInstance.get('http://localhost:4000/expense/download-expense')
+            const response = await reqInstance.get('https://expenso-backend-production.up.railway.app/expense/download-expense')
             if (response.status == 200) {
                 var a = document.createElement('a')
                 a.href = response.data.fileUrl

@@ -19,7 +19,7 @@ const UpdateProfile = ({ setIsUpdated }) => {
                     Authorization: token
                 }
             })
-            const response = await reqInstance.get('http://localhost:4000/user/userInfo')
+            const response = await reqInstance.get('https://expenso-backend-production.up.railway.app/user/userInfo')
             setName(response.data.data.name)
             setPhotoUrl(response.data.data.photoUrl)
 
@@ -41,7 +41,7 @@ const UpdateProfile = ({ setIsUpdated }) => {
                 name,
                 photoUrl
             }
-            const response = await reqInstance.post('http://localhost:4000/user/update-userInfo', data).then(() => {
+            const response = await reqInstance.post('https://expenso-backend-production.up.railway.app/user/update-userInfo', data).then(() => {
                 setName('')
                 setPhotoUrl('')
                 alert('Profile updated!')
